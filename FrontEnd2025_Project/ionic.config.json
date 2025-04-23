@@ -1,0 +1,7 @@
+{
+  "name": "FrontEnd2025_Project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
