@@ -8,6 +8,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
+    <!-- changed colour for toolbar in the variable.scss file -->
     <ion-toolbar>
       <ion-title size="large">Dynamic Currency Exchnage Rates</ion-title>
       <ion-back-button (click)="backHomeButton()">Home</ion-back-button>
@@ -25,7 +26,8 @@
 		<header>
 			<h1>Dynamic Currencies Exchange Rates</h1>
 		</header>
-
+    
+    <!-- routing for different pages for the currencies-->
 		<nav>
         <ion-button (click)="openDollarPage()">
           Dollars to Euros
@@ -42,6 +44,7 @@
 		</nav>
 	</div>
 
+  <!-- stylings -->
   <style>
 	  body {
      font-family: Arial, sans-serif;
