@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Dynamic Currency Tracking App
+      Dynamic Currency Exchnage Rates
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,17 +9,64 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Dynamic Currency Exchnage Rates</ion-title>
+      <ion-back-button (click)="backHomeButton()">Home</ion-back-button>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <ion-button (click)="openDollarPage()">hi</ion-button>
+  <br>
 
-    <ul>
-      <li>Dollars</li>
-      <li>Euros</li>
-      <li>Yen</li>
-    </ul>
+  <div>
+    <img src="assets/stocks.jpg" style="max-width: 900px; display: block; margin: 0 auto;"/>
   </div>
+  <br>
+
+  <div style="bottom: 0;">
+		<header>
+			<h1>Dynamic Currencies Exchange Rates</h1>
+		</header>
+
+		<nav>
+        <ion-button (click)="openDollarPage()">
+          Dollars to Euros
+        </ion-button>
+        <ion-button (click)="openYenPage()">
+          Yen to Euros
+        </ion-button>
+        <ion-button (click)="openAustralianDolPage()">
+          Australian Dollars to Euros
+        </ion-button>
+        <ion-button (click)="openRubblePage()">
+          Rubbles to Euros
+        </ion-button>
+		</nav>
+	</div>
+
+  <style>
+	  body {
+     font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #DCDCDC;
+			text-align: center;
+    }
+    header {
+      background-color: #0C0F0A;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #800020;
+      padding: 10px 0;
+      text-align: center;
+    }
+		.div {
+      border: 5px solid #0C0F0A;
+      background-color: #800020;
+      padding: 30px;
+      text-align: center;
+			color: #ffffff;
+    }
+  </style>
 </ion-content>

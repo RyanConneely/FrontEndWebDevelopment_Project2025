@@ -22,4 +22,12 @@ export const routes: Routes = [
     path: 'yen',
     loadComponent: () => import('./yen/yen.page').then( m => m.YenPage)
   },
+  {
+    path: 'austrodollar',
+    loadComponent: () => import('./austrodollar/austrodollar.page').then( m => m.AustrodollarPage)
+  },
+  {
+    path: 'rubble',
+    loadComponent: () => import('./rubble/rubble.page').then( m => m.RubblePage)
+  },
 ];
